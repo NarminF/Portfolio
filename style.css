@@ -315,6 +315,66 @@ h2 { text-align: center; margin-bottom: 40px; font-size: 2rem; color: var(--prim
 .date { background: var(--dark); padding: 2px 10px; border-radius: 4px; font-weight: bold; }
 .link-doc { display: inline-block; margin-top: 15px; color: var(--accent); font-weight: bold; text-decoration: none; }
 
+/* --- SECTION DOCUMENTS --- */
+#documents {
+    background-color: var(--white);
+    padding-bottom: 40px; /* Un peu d'espace avant la bordure du footer */
+}
+
+/* Grille pour aligner le Tableau Excel et les Attestations */
+.doc-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+/* Style des cartes de documents */
+.doc-item {
+    background: var(--light);
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #eee;
+}
+
+.doc-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+}
+
+/* Couleurs spécifiques pour les icônes */
+.excel-icon { 
+    font-size: 3.5rem; 
+    color: #1d6f42; /* Le vert officiel d'Excel */
+    margin-bottom: 15px; 
+}
+
+.cert-icon { 
+    font-size: 3.5rem; 
+    color: var(--accent); /* Le rouge pour les PDF/Certificats */
+    margin-bottom: 15px; 
+}
+
+.doc-item h4 {
+    margin-bottom: 10px;
+    color: var(--primary);
+}
+
+.doc-item p {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* Compatibilité Dark Mode pour la section Documents */
+body.dark-mode .doc-item {
+    background: var(--card-bg);
+    border-color: #333;
+}
+
 /* Footer */
 /* --- FOOTER OPTIMISÉ --- */
 footer {
@@ -386,4 +446,8 @@ footer {
     border-top: 1px solid rgba(255,255,255,0.1);
     font-size: 0.8rem;
     opacity: 0.7;
+}
+/* Supprime l'espace blanc sous la dernière section avant le footer */
+#documents {
+    padding-bottom: 0;
 }
