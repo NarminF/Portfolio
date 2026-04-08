@@ -106,6 +106,89 @@ h1 { font-size: 3.5rem; margin-bottom: 10px; }
 .btn:hover { opacity: 0.9; transform: translateY(-3px); }
 
 /* Sections */
+/* --- SECTION FORMATION (ÉDUCATION) --- */
+.education-timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.edu-item {
+    display: flex;
+    background: var(--white);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    overflow: hidden;
+    border-left: 5px solid var(--secondary);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.edu-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+}
+
+.edu-date {
+    background: var(--primary);
+    color: white;
+    padding: 20px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 160px;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+.edu-content {
+    padding: 20px 25px;
+    flex: 1;
+}
+
+.edu-content h3 {
+    color: var(--primary);
+    margin-bottom: 5px;
+    font-size: 1.2rem;
+}
+
+.edu-school {
+    color: var(--accent); /* Rouge Gers pour rappeler le lieu */
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 0.95rem;
+}
+
+.edu-content p {
+    font-size: 0.95rem;
+    margin-bottom: 0;
+}
+
+/* Compatibilité avec ton Dark Mode */
+body.dark-mode .edu-item {
+    background: var(--card-bg);
+}
+body.dark-mode .edu-content h3 {
+    color: var(--secondary);
+}
+body.dark-mode .edu-date {
+    background: #111; /* Fond très sombre pour contraster */
+    color: var(--secondary); /* Texte bleu clair pour être lisible */
+}
+
+/* Responsive (Pour les téléphones) */
+@media (max-width: 600px) {
+    .edu-item {
+        flex-direction: column; /* Empile la date au-dessus du texte sur mobile */
+    }
+    .edu-date {
+        padding: 10px;
+        min-width: auto;
+    }
+}
+
 /* --- SECTION COMPÉTENCES --- */
 #competences {
     background-color: var(--white);
@@ -373,6 +456,113 @@ h2 { text-align: center; margin-bottom: 40px; font-size: 2rem; color: var(--prim
 body.dark-mode .doc-item {
     background: var(--card-bg);
     border-color: #333;
+}
+
+/* --- SECTION VEILLE INOREADER (CYBERSÉCURITÉ) --- */
+.veille-intro {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 30px auto;
+    font-size: 1.1rem;
+    color: var(--primary);
+}
+
+.veille-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr; /* L'iframe prendra un peu plus de place à droite */
+    gap: 40px;
+    background: var(--white);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    border-left: 6px solid #f39c12; /* Couleur orange/jaune typique des flux RSS */
+}
+
+.veille-info h3 {
+    color: var(--primary);
+    margin-bottom: 20px;
+    font-size: 1.3rem;
+}
+
+.veille-info h4 {
+    margin-top: 20px;
+    margin-bottom: 15px;
+    color: var(--secondary);
+}
+
+.veille-tools {
+    list-style: none;
+    margin-bottom: 30px;
+}
+
+.veille-tools li {
+    margin-bottom: 12px;
+    font-size: 0.95rem;
+    padding-left: 20px;
+    position: relative;
+    line-height: 1.4;
+}
+
+.veille-tools li::before {
+    content: "▹";
+    position: absolute;
+    left: 0;
+    color: #f39c12; /* Rappel de la couleur RSS */
+    font-weight: bold;
+}
+
+.veille-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Style de la zone Iframe (Inoreader) */
+.veille-iframe-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.veille-iframe-container h4 {
+    color: var(--secondary);
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.inoreader-iframe {
+    width: 100%;
+    height: 350px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: inset 0 2px 5px rgba(0,0,0,0.05);
+    background-color: #fafafa;
+    flex-grow: 1; /* Permet à l'iframe de prendre toute la hauteur disponible */
+}
+
+/* --- COMPATIBILITÉ DARK MODE --- */
+body.dark-mode .veille-grid {
+    background: var(--card-bg);
+    border-color: #f39c12;
+}
+
+body.dark-mode .veille-intro {
+    color: var(--text-color);
+}
+
+body.dark-mode .inoreader-iframe {
+    border-color: #444;
+    background-color: #222;
+}
+
+/* --- RESPONSIVE (POUR TÉLÉPHONES) --- */
+@media (max-width: 900px) {
+    .veille-grid {
+        grid-template-columns: 1fr; /* Sur petit écran, on empile le texte et l'iframe */
+    }
+    
+    .inoreader-iframe {
+        height: 400px; /* On donne un peu plus de hauteur sur mobile pour faciliter la lecture */
+    }
 }
 
 /* Footer */
