@@ -13,15 +13,15 @@
         <div class="nav-container">
             <div class="logo">FARAJLI NARMIN<span>.dev</span></div>
             <ul>
-                <li><a href="#accueil">Accueil</a></li>
-                <li><a href="#profil">Profil</a></li>
-                <li><a href="#education">Éducation</a></li>
-                <li><a href="#competences">Compétences</a></li>
-                <li><a href="#projets">Projets</a></li>
-                <li><a href="#stages">Expériences</a></li>
-                <li><a href="#documents">Certifications</a></li>
-                <li><a href="#contact">Contact</a></li>
-
+                <li><a href="#accueil" data-fr="Accueil" data-en="Home">Accueil</a></li>
+                <li><a href="#profil" data-fr="Profil" data-en="Profile">Profil</a></li>
+                <li><a href="#education" data-fr="Éducation" data-en="Education">Éducation</a></li>
+                <li><a href="#competences" data-fr="Compétences" data-en="Skills">Compétences</a></li>
+                <li><a href="#projets" data-fr="Projets" data-en="Projects">Projets</a></li>
+                <li><a href="#stages" data-fr="Expériences" data-en="Experience">Expériences</a></li>
+                <li><a href="#documents" data-fr="Certifications" data-en="Certifications">Certifications</a></li>
+                <li><a href="#contact" data-fr="Contact" data-en="Contact">Contact</a></li>
+                <li><button id="lang-switch" class="lang-btn"><i class="fas fa-globe"></i> EN</button></li>
             </ul>
         </div>
     </nav>
@@ -29,31 +29,30 @@
     <header id="accueil">
         <div class="hero-content">
             <h1>Narmin FARAJLI</h1>
-            <p class="subtitle">Développeur Junior | Data Analyst | Support IT</p>
-            <p>Développeuse d'applications spécialisée en solutions métiers et analyse de données.</p>
+            <p class="subtitle" data-fr="Développeur Junior | Data Analyst | Support IT" data-en="Junior Developer | Data Analyst | IT Support">Développeur Junior | Data Analyst | Support IT</p>
+            <p data-fr="Développeuse d'applications spécialisée en solutions métiers et analyse de données." data-en="Application developer specializing in business solutions and data analysis.">Développeuse d'applications spécialisée en solutions métiers et analyse de données.</p>
             <div class="btns">
-                <a href="#projets" class="btn">Voir mes projets</a>
-                <a href="docs/CV_Narmin_Farajli.pdf" class="btn btn-alt" target="_blank"><i class="fas fa-file-pdf"></i> Mon CV</a>
-                <a href="docs/CV_Farajli_EN.pdf" class="btn btn-alt" target="_blank"><i class="fas fa-file-pdf"></i> My Resume in English</a>
+                <a href="#projets" class="btn" data-fr="Voir mes projets" data-en="View my projects">Voir mes projets</a>
+                <a href="docs/CV_Narmin_Farajli.pdf" class="btn btn-alt" target="_blank" id="cv-link"><i class="fas fa-file-pdf"></i> <span data-fr="Mon CV" data-en="My CV">Mon CV</span></a>
             </div>
         </div>
     </header>
 
     <section id="profil">
         <div class="container">
-            <h2><i class="fas fa-user-graduate"></i> À propos de moi</h2>
+            <h2><i class="fas fa-user-graduate"></i> <span data-fr="À propos de moi" data-en="About me"></span>À propos de moi</span></h2>
             <div class="profil-grid">
                 <div class="text">
-                    <p>
+                    <p data-fr="Récemment diplômée d'un BTS SIO, je suis une professionnelle de l'informatique polyvalente. Passionnée par le cycle de vie logiciel et la gestion des données, je maîtrise le développement applicatif et web (PHP, Java, Kotlin, JavaScript) ainsi que l'analyse de données structurées (SQL, SAP BO). Mes expériences professionnelles au Conseil Départemental du Gers m'ont également permis de développer de solides compétences en infrastructure et support (déploiement Docker, automatisation sous Linux)." data-en="Recently graduated with a BTS SIO, I am a versatile IT professional. Passionate about the software lifecycle and data management, I master application and web development (PHP, Java, Kotlin, JavaScript) as well as structured data analysis (SQL, SAP BO). My professional experiences at the Gers Departmental Council have also allowed me to develop strong infrastructure and support skills (Docker deployment, Linux automation).">
                         Récemment diplômée d'un BTS SIO, je suis une professionnelle de l'informatique polyvalente. Passionnée par le cycle de vie logiciel et la gestion des données, je maîtrise le développement applicatif et web (PHP, Java, Kotlin, JavaScript) ainsi que l'analyse de données structurées (SQL, SAP BO). Mes expériences professionnelles au Conseil Départemental du Gers m'ont également permis de développer de solides compétences en infrastructure et support (déploiement Docker, automatisation sous Linux).
                     </p>
                 </div>
                 <div class="skills-highlight">
-                    <h3>Mes Domaines d'Intervention</h3>
+                    <h3 data-fr="Mes Domaines d'Intervention" data-en="My Areas of Expertise">Mes Domaines d'Intervention</h3>
                     <ul class="slam-list">
-                        <li><i class="fas fa-check-circle"></i> Conception et développement du web et d'applications </li>
-                        <li><i class="fas fa-check-circle"></i> Analyse et gestion de bases de données relationnelles </li>
-                        <li><i class="fas fa-check-circle"></i> Support technique et administration système </li>
+                        <li><i class="fas fa-check-circle"></i> <span data-fr="Conception et développement du web et d'applications" data-en="Web and application design and development">Conception et développement du web et d'applications</span></li>
+                        <li><i class="fas fa-check-circle"></i> <span data-fr="Analyse et gestion de bases de données relationnelles" data-en="Analysis and management of relational databases">Analyse et gestion de bases de données relationnelles</span></li>
+                        <li><i class="fas fa-check-circle"></i> <span data-fr="Support technique et administration système" data-en="Technical support and system administration">Support technique et administration système</span></li>
                     </ul>
                 </div>
             </div>
@@ -61,23 +60,23 @@
     </section>
     <section id="education" class="alt-bg">
         <div class="container">
-            <h2><i class="fas fa-graduation-cap"></i> Mes Formations</h2>
+            <h2><i class="fas fa-graduation-cap"></i> <span data-fr="Mes Formations" data-en="My Education">Mes Formations</span></h2>
             <div class="education-timeline">
                 <div class="edu-item">
-                    <div class="edu-date">2024 - 2026 (obtenu)</div>
+                    <div class="edu-date">2026</div>
                     <div class="edu-content">
                         <h3>BTS SIO - Option SLAM</h3>
                         <p class="edu-school"><i class="fas fa-university"></i> Lycée Ozenne, Toulouse</p>
-                        <p>Services Informatiques aux Organisations - Spécialité Solutions Logicielles et Applications Métiers (Développement, base de données, cybersécurité de base).</p>
+                        <p data-fr="Services Informatiques aux Organisations - Spécialité Solutions Logicielles et Applications Métiers (Développement, base de données, cybersécurité de base)." data-en="IT Services to Organizations - Specialty Software Solutions and Business Applications (Development, databases, basic cybersecurity).">Services Informatiques aux Organisations - Spécialité Solutions Logicielles et Applications Métiers (Développement, base de données, cybersécurité de base).</p>
                     </div>
                 </div>
                 <div class="edu-item">
-                    <div class="edu-date">2021 - 2024 (obtenu)</div>
+                    <div class="edu-date">2024</div>
                     <div class="edu-content">
                         <h3>Baccalauréat STMG - Option SIG</h3>
                         <p class="edu-school"><i class="fas fa-university"></i> Lycée Pardailhan, Auch</p>
-                        <p>Sciences et Technologies de la Gestion - <strong>Systèmes d'Information de Gestion</strong>.</p>
-                        <p>Première approche de la programmation, des bases de données et de la gestion des organisations.</p>
+                        <p data-fr="Sciences et Technologies de la Gestion - Systèmes d'Information de Gestion." data-en="Sciences and Technologies of Management - Management Information Systems.">Sciences et Technologies de la Gestion - Systèmes d'Information de Gestion.</p>
+                        <p data-fr="Première approche de la programmation, des bases de données et de la gestion des organisations." data-en="First approach to programming, databases, and organization management.">Première approche de la programmation, des bases de données et de la gestion des organisations.</p>
                     </div>
                 </div>
             </div>
@@ -87,15 +86,15 @@
     </section>
     <section id="competences">
         <div class="container">
-            <h2><i class="fas fa-laptop-code"></i> Mes Compétences</h2>
+            <h2><i class="fas fa-laptop-code"></i> <span data-fr="Mes Compétences" data-en="My Skills">Mes Compétences</span></h2>
             <div class="skills-wrapper">
-                
+
                 <div class="skill-category">
                     <div class="skill-icon"><i class="fas fa-code"></i></div>
-                    <h3>Développement & Web</h3>
+                    <h3 data-fr="Développement & Web" data-en="Development & Web">Développement & Web</h3>
                     <ul>
                         <li>HTML5 / CSS3 / JavaScript</li>
-                        <li>PHP & Java/Kotlin (Projets CROSL)</li>
+                        <li>PHP & Java/Kotlin <span data-fr="(Projets CROSL)" data-en="(CROSL Projects)">(Projets CROSL)</span></li>
                         <li>Python & Scripting Bash</li>
                         <li>Frameworks & CMS (WordPress)</li>
                     </ul>
@@ -103,33 +102,33 @@
 
                 <div class="skill-category">
                     <div class="skill-icon"><i class="fas fa-database"></i></div>
-                    <h3>Données & Décisionnel</h3>
+                    <h3 data-fr="Données & Décisionnel" data-en="Data & Business Intelligence">Données & Décisionnel</h3>
                     <ul>
                         <li>SQL (MySQL, MariaDB, Oracle, SQLite)</li>
-                        <li>SAP BusinessObjects (Analyse RH)</li>
-                        <li>Conception de bases de données</li>
+                        <li>SAP BusinessObjects <span data-fr="(Analyse RH)" data-en="(HR Analysis)">(Analyse RH)</span></li>
+                        <li data-fr="Conception de bases de données" data-en="Database design">Conception de bases de données</li>
                     </ul>
                 </div>
 
                 <div class="skill-category">
                     <div class="skill-icon"><i class="fas fa-tools"></i></div>
-                    <h3>Outils & Environnements</h3>
+                    <h3 data-fr="Outils & Environnements" data-en="Tools & Environments">Outils & Environnements</h3>
                     <ul>
-                        <li><strong>Conteneurisation :</strong> Docker & Docker Compose </li>
-                        <li><strong>Systèmes :</strong> Linux (Ubuntu), Raspberry Pi OS, WSL2</li>
-                        <li><strong>Versionnage :</strong> GitLab & GitHub </li>
-                        <li><strong>Virtualisation :</strong> Proxmox</li>
+                        <li><strong data-fr="Conteneurisation :" data-en="Containerization:">Conteneurisation :</strong> Docker & Docker Compose </li>
+                        <li><strong data-fr="Systèmes :" data-en="Systems:">Systèmes :</strong> Linux (Ubuntu), Raspberry Pi OS, WSL2</li>
+                        <li><strong data-fr="Versionnage :" data-en="Versioning:">Versionnage :</strong> GitLab & GitHub </li>
+                        <li><strong data-fr="Virtualisation :" data-en="Virtualization:">Virtualisation :</strong> Proxmox</li>
                         <li><strong>IDE :</strong> VSCode, Android Studio, IntelliJ IDEA</li>
                     </ul>
                 </div>
 
                 <div class="skill-category">
                     <div class="skill-icon"><i class="fas fa-language"></i></div>
-                    <h3>Langues</h3>
+                    <h3 data-fr="Langues" data-en="Languages">Langues</h3>
                     <div class="lang-tags">
-                        <span class="lang">Turc (Maternel)</span>
-                        <span class="lang">Azerbaïdjanais (Maternel)</span>
-                        <span class="lang">Français (Courant)</span>
+                        <span class="lang">Turc <span data-fr="(Maternel)" data-en="(Native)">(Maternel)</span></span>
+                        <span class="lang">Azerbaïdjanais <span data-fr="(Maternel)" data-en="(Native)">(Maternel)</span></span>
+                        <span class="lang">Français <span  data-en="(Fluent)">(Courant)</span></span>
                         <span class="lang">Anglais (B1/B2)</span>
                         <span class="lang">Allemand (A2)</span>
                     </div>
@@ -141,36 +140,36 @@
 
     <section id="projets" class="alt-bg">
         <div class="container">
-            <h2><i class="fas fa-university"></i> Projets en Formation (AP)</h2>
+            <h2><i class="fas fa-university"></i> <span data-fr="Projets en Formation (AP)" data-en="Training Projects (AP)">Projets en Formation (AP)</span></h2>
             <div class="projets-grid">
-                
+
                <div class="category-block">
-                    <h3>Développement Web</h3>
+                    <h3 data-fr="Développement Web" data-en="Web Development">Développement Web</h3>
                     <div class="mini-card">
                         <span>12/25</span>
-                        <h4>Mission 2 : Gestion des Formations du CROSL (PHP)</h4>
-                        <p>Développement d'une application web dynamique de gestion.</p>
-                        <a href="docs/projets/Mission2.pdf" target="_blank" class="btn btn-sm">Voir la documentation</a>
+                        <h4 data-fr="Mission 2 : Gestion des Formations du CROSL (PHP)" data-en="Mission 2: CROSL Training Management (PHP)">Mission 2 : Gestion des Formations du CROSL (PHP)</h4>
+                        <p data-fr="Développement d'une application web dynamique de gestion." data-en="Development of a dynamic web management application.">Développement d'une application web dynamique de gestion.</p>
+                        <a href="docs/projets/Mission2.pdf" target="_blank" class="btn btn-sm"><span data-fr="Voir la documentation" data-en="View documentation">Voir la documentation</span></a>
                     </div>
                 </div>
 
                 <div class="category-block">
-                    <h3>Solutions Mobiles</h3>
+                    <h3 data-fr="Solutions Mobiles" data-en="Mobile Solutions">Solutions Mobiles</h3>
                     <div class="mini-card">
                         <span>Avr-26</span>
-                        <h4>Mission 3 : Mobile Forma (Kotlin Android)</h4>
-                        <p>Développement d'une application mobile métier avec Kotlin.</p>
-                        <a href="docs/projets/Mission3.pdf" target="_blank" class="btn btn-sm">Voir la documentation</a>
+                        <h4 data-fr="Mission 3 : Mobile Forma (Kotlin Android)" data-en="Mission 3: Mobile Forma (Kotlin Android)">Mission 3 : Mobile Forma (Kotlin Android)</h4>
+                        <p data-fr="Développement d'une application mobile métier avec Kotlin." data-en="Development of a business mobile application with Kotlin.">Développement d'une application mobile métier avec Kotlin.</p>
+                        <a href="docs/projets/Mission3.pdf" target="_blank" class="btn btn-sm"><span data-fr="Voir la documentation" data-en="View documentation">Voir la documentation</span></a>
                     </div>
                 </div>
 
                 <div class="category-block">
-                    <h3>Infrastructure & Analyse</h3>
+                    <h3 data-fr="Infrastructure & Analyse" data-en="Infrastructure & Analysis">Infrastructure & Analyse</h3>
                     <div class="mini-card">
                         <span>Nov-25</span>
-                        <h4>GLPI : Mise en œuvre serveur LAMP (Proxmox)</h4>
-                        <p>Rédaction d'une procédure d'installation et déploiement de serveur.</p>
-                        <a href="docs/projets/GLPI_LAMP.pdf" target="_blank" class="btn btn-sm">Voir la procédure</a>
+                        <h4 data-fr="GLPI : Mise en œuvre serveur LAMP (Proxmox)" data-en="GLPI: LAMP Server Implementation (Proxmox)">GLPI : Mise en œuvre serveur LAMP (Proxmox)</h4>
+                        <p data-fr="Rédaction d'une procédure d'installation et déploiement de serveur." data-en="Writing an installation procedure and server deployment.">Rédaction d'une procédure d'installation et déploiement de serveur.</p>
+                        <a href="docs/projets/GLPI_LAMP.pdf" target="_blank" class="btn btn-sm"><span data-fr="Voir la procédure" data-en="View procedure">Voir la procédure</span></a>
                     </div>
                 </div>
             </div>
@@ -179,24 +178,24 @@
 
     <section id="stages">
         <div class="container">
-            <h2><i class="fas fa-briefcase"></i> Expériences en Entreprise</h2>
-            
+            <h2><i class="fas fa-briefcase"></i> <span data-fr="Expériences en Entreprise" data-en="Work Experience">Expériences en Entreprise</span></h2>
+
             <div class="stage-card highlight">
                 <div class="stage-header">
                     <img src="img/Logo_cg_gers.jpg" alt="Conseil Départemental du Gers" class="logo-stage">
                     <div>
-                        <h3>Conseil Départemental du Gers | Stage 2ème Année</h3>
-                        <span class="date">Janvier - Février 2026</span>
+                        <h3 data-fr="Conseil Départemental du Gers | Stage 2ème Année" data-en="Gers Departmental Council | 2nd Year Internship">Conseil Départemental du Gers | Stage 2ème Année</h3>
+                        <span class="date" data-fr="Janvier - Février 2026" data-en="January - February 2026">Janvier - Février 2026</span>
                     </div>
                 </div>
                 <div class="stage-body">
-                    <p><strong>Projet majeur :</strong> Étude et déploiement de la solution d'affichage dynamique <strong>Xibo</strong>.</p>
+                    <p><strong data-fr="Projet majeur :" data-en="Major project:">Projet majeur :</strong> <span data-fr="Étude et déploiement de la solution d'affichage dynamique" data-en="Study and deployment of the digital signage solution">Étude et déploiement de la solution d'affichage dynamique</span> <strong>Xibo</strong>.</p>
                     <ul>
-                        <li>Migration d'une infrastructure propriétaire vers une solution Open Source.</li>
-                        <li>Conteneurisation des services via <strong>Docker Compose</strong>.</li>
-                        <li>Configuration de lecteurs sur <strong>Raspberry Pi</strong> avec automatisation via Systemd.</li>
+                        <li data-fr="Migration d'une infrastructure propriétaire vers une solution Open Source." data-en="Migration from proprietary infrastructure to an Open Source solution.">Migration d'une infrastructure propriétaire vers une solution Open Source.</li>
+                        <li data-fr="Conteneurisation des services via Docker Compose." data-en="Containerization of services via Docker Compose.">Conteneurisation des services via <strong>Docker Compose</strong>.</li>
+                        <li data-fr="Configuration de lecteurs sur Raspberry Pi avec automatisation via Systemd." data-en="Configuration of players on Raspberry Pi with automation via Systemd.">Configuration de lecteurs sur <strong>Raspberry Pi</strong> avec automatisation via Systemd.</li>
                     </ul>
-                    <a href="docs/2026_RS_FARAJLI_NARMIN.pdf" class="btn-sm" target="_blank">Rapport de stage 2026</a>
+                    <a href="docs/2026_RS_FARAJLI_NARMIN.pdf" class="btn-sm" target="_blank"><span data-fr="Rapport de stage 2026" data-en="2026 Internship Report">Rapport de stage 2026</span></a>
                 </div>
             </div>
 
@@ -204,18 +203,18 @@
                 <div class="stage-header">
                     <img src="img/Logo_cg_gers.jpg" alt="CD32" class="logo-stage">
                     <div>
-                        <h3>Conseil Départemental du Gers | Stage 1ère Année</h3>
-                        <span class="date">Mai - Juin 2025</span>
+                        <h3 data-fr="Conseil Départemental du Gers | Stage 1ère Année" data-en="Gers Departmental Council | 1st Year Internship">Conseil Départemental du Gers | Stage 1ère Année</h3>
+                        <span class="date" data-fr="Mai - Juin 2025" data-en="May - June 2025">Mai - Juin 2025</span>
                     </div>
                 </div>
                 <div class="stage-body">
-                    <p><strong>Missions RH & Data :</strong> Support technique et évolution des outils de la DRH.</p>
+                    <p><strong data-fr="Missions RH & Data :" data-en="HR & Data Missions:">Missions RH & Data :</strong> <span data-fr="Support technique et évolution des outils de la DRH." data-en="Technical support and evolution of HR tools.">Support technique et évolution des outils de la DRH.</span></p>
                     <ul>
-                        <li>Fiabilisation de rapports décisionnels avec <strong>SAP BusinessObjects</strong> et SQL.</li>
-                        <li>Refonte ergonomique de l'intranet RH via <strong>WordPress</strong> (HTML/CSS).</li>
-                        <li>Analyse de données et correction de requêtes SQL complexes.</li>
+                        <li data-fr="Fiabilisation de rapports décisionnels avec SAP BusinessObjects et SQL." data-en="Reliability of decision reports with SAP BusinessObjects and SQL.">Fiabilisation de rapports décisionnels avec <strong>SAP BusinessObjects</strong> et SQL.</li>
+                        <li data-fr="Refonte ergonomique de l'intranet RH via WordPress (HTML/CSS)." data-en="Ergonomic redesign of the HR intranet via WordPress (HTML/CSS).">Refonte ergonomique de l'intranet RH via <strong>WordPress</strong> (HTML/CSS).</li>
+                        <li data-fr="Analyse de données et correction de requêtes SQL complexes." data-en="Data analysis and correction of complex SQL queries.">Analyse de données et correction de requêtes SQL complexes.</li>
                     </ul>
-                    <a href="docs/2025_RS_FARAJLI_NARMIN.pdf" class="btn-sm" target="_blank">Rapport de stage 2025</a>
+                    <a href="docs/2025_RS_FARAJLI_NARMIN.pdf" class="btn-sm" target="_blank"><span data-fr="Rapport de stage 2025" data-en="2025 Internship Report">Rapport de stage 2025</span></a>
                 </div>
             </div>
 
@@ -223,42 +222,92 @@
     </section>
     <section id="documents">
         <div class="container doc-section">
-            <h2><i class="fas fa-folder-open"></i>Certifications & Formation Continue</h2>
-            <p>Certifications professionnelles validant mes acquis techniques et réglementaires.</p>
+            <h2><i class="fas fa-folder-open"></i><span data-fr="Certifications & Formation Continue" data-en="Certifications & Continuing Education">Certifications & Formation Continue</span></h2>
+            <p data-fr="Certifications professionnelles validant mes acquis techniques et réglementaires." data-en="Professional certifications validating my technical and regulatory knowledge.">Certifications professionnelles validant mes acquis techniques et réglementaires.</p>
             <div class="doc-grid">
                 <div class="doc-item">
                     <i class="fas fa-file-pdf pdf-icon"></i>
-                    <h4>Certifications</h4>
-                    <p>Certifications professionnelles MOOC</p>
-                    <a href="docs/Narmin_Farajli_Certifications_CNIL_RGPD.pdf" class="btn" target="_blank">Certifications CNIL : Atelier RGPD (Modules 1 à 3)</a>
+                    <h4 data-fr="Certifications" data-en="Certifications">Certifications</h4>
+                    <p data-fr="Certifications professionnelles MOOC" data-en="Professional MOOC certifications">Certifications professionnelles MOOC</p>
+                    <a href="docs/Narmin_Farajli_Certifications_CNIL_RGPD.pdf" class="btn" target="_blank"><span data-fr="Certifications CNIL : Atelier RGPD (Modules 1 à 3)" data-en="CNIL Certifications: GDPR Workshop (Modules 1 to 3)">Certifications CNIL : Atelier RGPD (Modules 1 à 3)</span></a>
                 </div>
             </div>
         </div>
     </section>
 
     <footer id="contact">
-    <h2><i class="fas fa-envelope"></i> Contact</h2>
+    <h2><i class="fas fa-envelope"></i> <span data-fr="Contact" data-en="Contact">Contact</span></h2>
     <div class="footer-container">
         <div class="footer-column">
             <h3><i class="fas fa-user"></i> Narmin FARAJLI</h3>
-            <p>Étudiante en BTS SIO Option SLAM</p>
             <p><i class="fas fa-phone"></i> 07 80 20 50 74 </p>
             <p><i class="fas fa-envelope"></i> narminfarajli5@gmail.com </p>
         </div>
 
         <div class="footer-column">
-            <h3><i class="fas fa-map-marker-alt"></i> Localisation & Liens</h3>
+            <h3><i class="fas fa-map-marker-alt"></i> <span data-fr="Localisation & Liens" data-en="Location & Links">Localisation & Liens</span></h3>
             <p> 32600, L'Isle-Jourdain </p>
             <div class="footer-links">
                 <p><i class="fas fa-link"></i> <a href="https://www.linkedin.com/in/narmin-farajli/" target="_blank">LinkedIn</a></p>
-                <a href="#accueil" class="footer-link-item"><i class="fas fa-arrow-up"></i> Retour en haut</a>
+                <a href="#accueil" class="footer-link-item"><i class="fas fa-arrow-up"></i> <span data-fr="Retour en haut" data-en="Back to top">Retour en haut</span></a>
             </div>
         </div>
     </div>
     <div class="footer-bottom">
-        <p>&copy; 2026 - Portfolio Narmin FARAJLI </p>
+        <p>&copy; 2026 - <span data-fr="Portfolio Narmin FARAJLI" data-en="Narmin FARAJLI Portfolio">Portfolio Narmin FARAJLI</span> </p>
     </div>
 </footer>
+
+<script>
+    // Language switching functionality
+    let currentLang = 'fr';
+
+    const langSwitch = document.getElementById('lang-switch');
+    const cvLink = document.getElementById('cv-link');
+
+    // CV file paths
+    const cvFiles = {
+        fr: 'docs/CV_Narmin_Farajli.pdf',
+        en: 'docs/CV_Farajli_EN.pdf'
+    };
+
+    // Language button text
+    const langButtonText = {
+        fr: '<i class="fas fa-globe"></i> EN',
+        en: '<i class="fas fa-globe"></i> FR'
+    };
+
+    // Function to switch language
+    function switchLanguage(lang) {
+        currentLang = lang;
+
+        // Update all elements with data-fr and data-en attributes
+        document.querySelectorAll('[data-fr][data-en]').forEach(element => {
+            element.innerHTML = element.getAttribute(`data-${lang}`);
+        });
+
+        // Update CV link
+        if (cvLink) {
+            cvLink.href = cvFiles[lang];
+        }
+
+        // Update language switcher button
+        if (langSwitch) {
+            langSwitch.innerHTML = langButtonText[lang];
+        }
+
+        // Update HTML lang attribute
+        document.documentElement.lang = lang === 'fr' ? 'fr' : 'en';
+    }
+
+    // Event listener for language switcher
+    if (langSwitch) {
+        langSwitch.addEventListener('click', () => {
+            const newLang = currentLang === 'fr' ? 'en' : 'fr';
+            switchLanguage(newLang);
+        });
+    }
+</script>
 
 </body>
 </html>

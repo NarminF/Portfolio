@@ -16,6 +16,7 @@
 
 html {
     scroll-behavior: smooth;
+    scroll-padding-top: 80px;
 }
 
 body {
@@ -55,6 +56,8 @@ nav {
 .logo {
     font-size: 1.5rem;
     font-weight: bold;
+    display: inline-block;
+    white-space: nowrap;
 }
 
 .logo span { color: var(--secondary); }
@@ -74,6 +77,26 @@ nav ul li a {
 }
 
 nav ul li a:hover { color: var(--secondary); }
+
+/* Language switcher button */
+.lang-btn {
+    background: var(--secondary);
+    color: var(--white);
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.lang-btn:hover {
+    background: var(--accent);
+    transform: translateY(-2px);
+}
 
 /* Header */
 header {
@@ -333,12 +356,13 @@ h2 { text-align: center; margin-bottom: 40px; font-size: 2rem; color: var(--prim
 
 .mini-card {
     margin-bottom: 15px;
-    padding: 10px;
-    border-left: 3px solid #ddd;
+    padding: 15px;
+    border-left: 3px solid var(--secondary);
     background: #fdfdfd;
+    border-radius: 5px;
 }
 
-.mini-card span { font-size: 0.75rem; color: #888; font-weight: bold; }
+.mini-card span { font-size: 0.75rem; color: #214582; font-weight: bold; }
 .mini-card h4 { font-size: 0.95rem; color: var(--primary); }
 .mini-card p { font-size: 0.85rem; color: #555; }
 
